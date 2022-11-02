@@ -1,0 +1,48 @@
+
+
+
+
+
+{% block body %}
+
+        
+        <div id ="bd" class="container">
+
+                <li id ="nom"></li>
+                <li id = "prenom"></li>
+                <li id = "entreprise"></li>
+                <li id = "ecole"></li>
+        
+        
+        </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script>
+        
+        let nom = document.getElementById("nom");
+        let prenom = document.getElementById("prenom");
+        let entreprise = document.getElementById("entreprise");
+        let ecole = document.getElementById("ecole");
+
+      fetch('/mapage')
+             .then(function(response)
+             {
+                 return response.text();
+             })
+             .then(function(text)
+             {
+                const m = JSON.parse(text);
+                nom.innerHTML = "Nom :"+m.nom;
+                prenom.innerHTML = "Prenom :"+m.prenom;
+                entreprise.innerHTML = "Entreprise :"+m.entreprise;
+                ecole.innerHTML = "Ecole :"+m.ecole;
+
+             })
+        
+    </script>
+
+{% endblock %}

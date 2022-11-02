@@ -1,0 +1,9 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+
+
+mapage:
+    path: /mapage 
+    controller: App\Controller\MonController::mapage
