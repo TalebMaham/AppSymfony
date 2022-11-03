@@ -1,0 +1,34 @@
+
+
+
+
+
+{% block body %}
+
+        <h1>background {{ici}}</h1>
+
+        {{form_start(form)}}
+
+        <label for="nom" class="form-label">Nom</label>
+        {{form_widget(form.nom, {'attr': {'class':'form-control'}})}}
+
+          <label for="prenom" class="form-label">Prenom</label>
+        {{form_widget(form.prenom, {'attr': {'class':'form-control'}})}}
+
+
+          <label for="ecole" class="form-label">Ecole</label>
+        {{form_widget(form.ecole, {'attr': {'class':'form-control'}})}}
+
+
+          <label for="entreprise" class="form-label">Entreprise</label>
+        {{form_widget(form.entreprise, {'attr': {'class':'form-control'}})}}
+
+        {{form_end(form)}}
+
+{% endblock %}
+
+{% block javascripts %}
+
+
+
+{% endblock %}
