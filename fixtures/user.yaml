@@ -1,0 +1,20 @@
+App\Entity\User:
+  SidiUser: 
+    nom : "Abdarahman"
+    prenom : "Sidi"
+    email: "sidi@gmail.com"
+    password : "sidipassword"
+    roles : [ROLE_PROF]
+
+  DiyenUser: 
+    nom : "Youba"
+    prenom : "Diyen"
+    email: "diyen@gmail.com"
+    password : "sidipassword"
+      
+  YahyaUser: 
+    nom : "TALEB"
+    prenom : "yahya"
+    email: "yahya@gmail.com"
+    password : "sidipassword"
+

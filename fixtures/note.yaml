@@ -1,0 +1,21 @@
+App\Entity\Note:
+  note_1:
+    numerator : 12
+    denomunator : 20
+    user : '@SidiUser'
+    matiere : '@matiere_1'
+
+
+  note_2:
+    numerator : 11
+    denomunator : 20
+    user : '@DiyenUser'
+    matiere : '@matiere_1'
+
+  note_3:
+    numerator : 20
+    denomunator : 20
+    user : '@YahyaUser'
+    matiere : '@matiere_6'
+
+
